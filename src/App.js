@@ -32,6 +32,8 @@ function App() {
         aria-label="Recipient's username"
         aria-describedby="button-addon2" />
 
+      {!data && <h3 className="text-center my-5">Loading...</h3>}  
+
       <div className="d-flex justify-content-evenly align-items-center flex-wrap m-2">
         {data &&
           data.results.map((poke, i) => {
